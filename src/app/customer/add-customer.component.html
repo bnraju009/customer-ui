@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Customer</h2>
+<form>
+  <div class="form-group">
+    <label for="Name">Name:</label>
+    <input type="name" [(ngModel)]="customer.name" placeholder="Name" name="name" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <input [(ngModel)]="customer.age" placeholder="Age" name="age" class="form-control" id="age">
+  </div>
+
+  <div class="form-group">
+    <label for="active">Active:</label>
+    <input [(ngModel)]="customer.active" placeholder="Active" name="active" class="form-control" id="active">
+  </div>
+
+  <button class="btn btn-success" (click)="createCustomer()">Create</button>
+</form>
+</div>
